@@ -1,0 +1,8 @@
+.button-tabs .button-tabs-line { border-top-color: #ff5d5d; }
+.button-tabs .button-tabs-close { color: #ff5d5d }
+.button-tabs .button-tabs-main-btn { border: 1px solid #ff5d5d; color: #ff5d5d; }
+	.button-tabs .button-tabs-main-btn:hover { background: #ff5d5d; color: #fff;}
+
+.button-tabs .button-tabs-inner { border-bottom-color: #ff5d5d; }
+.button-tabs .button-tabs-inner .title { color: #ff5d5d; }
+.button-tabs .button-tabs-links .button-tabs-link-active, .button-tabs .button-tabs-links a:hover { color: #ff5d5d; border-bottom-color: #ff5d5d }

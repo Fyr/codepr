@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/button-tabs.css" rel="stylesheet" type="text/css">
+		<link href="css/button-tabs-theme-red.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h2>Демо плагина</h2>
+		<!-- начало верстки плагина-->
+		<div class="button-tabs">
+			<div class="title">Что бы записаться на собеседование, выберите один из вариантов:</div>
+			<div class="button-tabs-links">
+				<a href="javascript: void(0)">Facebook</a>
+				<a href="javascript: void(0)">Вконтакте</a>
+				<a href="javascript: void(0)">Деньги</a>
+			</div>
+			<div class="button-tabs-content">
+				<p>1. Поставьте лайк на странице школы</p>
+				<p>2. Поделитесь ссылкой на сайт школы</p>
+				<div class="code-small">Не удаляйте запись со своей страницы до начала обучения</div>
+				<div class="subscribe">
+        			<input type="text" placeholder="Электронная почта" />
+					<button>Записаться</button>
+				</div>
+			</div>
+			<div class="button-tabs-content">
+				<p>1. Подпишитесь на страницу школы:</p>
+				<p> 2. Нажмите "Мне нравится" и "Рассказать друзьям":</p>
+				<div class="code-small">Не удаляйте запись со своей страницы до начала обучения. </div>
+				<div class="subscribe">
+        			<input type="text" placeholder="Электронная почта" name="code-student" />
+					<button>Записаться</button>
+				</div>
+			</div>
+			<div class="button-tabs-content">
+				<p>Просто оплатите 300руб. за собеседование:</p>
+				<p> <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001465916272&quickpay=small&yamoney-payment-type=on&button-text=01&button-size=s&button-color=orange&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9+%D1%83%D1%80%D0%BE%D0%BA&default-sum=300&fio=on&mail=on&successURL=http%3A%2F%2Fcodepr.ru" width="137" height="31"></iframe></p>
+				<div class="subscribe">
+        			<input type="text" placeholder="Электронная почта" name="code-student" />
+					<button>Записаться</button>
+				</div>
+			</div>
+		</div>
+		<!-- конец верстки плагина-->
+
+		<h2>Как работает плагин</h2>
+		<div>1. Нужно подключить скрипты и стили:</div>
+		<pre>
+			&lt;link href="css/button-tabs.css" rel="stylesheet" type="text/css"&gt;
+			&lt;script type="text/javascript" src="js/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+			&lt;script type="text/javascript" src="js/jquery.button-tabs.js"&gt;&lt;/script&gt;
+		</pre>
+		<div>2. Сделать контейнер для вкладок с классом .button-tabs-links</div>
+		<pre>
+			&lt;div class="button-tabs-links"&gt;
+				&lt;a href="javascript: void(0)"&gt;Вкладка 1&lt;/a&gt;
+				&lt;a href="javascript: void(0)"&gt;Вкладка 2&lt;/a&gt;
+				&lt;a href="javascript: void(0)"&gt;Вкладка 3&lt;/a&gt;
+				...
+			&lt;/div&gt;
+		</pre>
+		<div>
+			3. Рядом сделать несколько контейнеров для содержимого вкладок с классом .button-tabs-content.<br>
+			Каждая вкладка соотв-ет своему контейнеру в порядке очередности.
+		</div>
+		<pre>
+			&lt;div class="button-tabs-content"&gt;Контент для вкладки 1...&lt;/div&gt;
+			&lt;div class="button-tabs-content"&gt;Контент для вкладки 2...&lt;/div&gt;
+			&lt;div class="button-tabs-content"&gt;Контент для вкладки 3...&lt;/div&gt;
+		</pre>
+		<div>4. Поместить оба контейнера в общий элемент.</div>
+		<pre>
+			&lt;div class="button-tabs"&gt;
+				...
+				&lt;div class="button-tabs-links"&gt;...&lt;/div&gt;
+				&lt;div class="button-tabs-content"&gt;...&lt;/div&gt;
+				&lt;div class="button-tabs-content"&gt;...&lt;/div&gt;
+				&lt;div class="button-tabs-content"&gt;...&lt;/div&gt;
+			&lt;/div&gt;
+		</pre>
+		<div>5. Применить для общего элемента плагин. Дополнительно можно задать опцию названия самой кнопки</div>
+		<pre>
+			$(function(){
+				$('.button-tabs').buttonTabs({
+					title: 'Записаться на собеседование'
+				});	
+			});
+		</pre>
+		<div>6. Возможность менять цветовую схему реализована через поключение доп.стиля</div>
+		<pre>
+			&lt;link href="css/button-tabs-red.css" rel="stylesheet" type="text/css"&gt;
+			или
+			&lt;link href="css/button-tabs-blue.css" rel="stylesheet" type="text/css"&gt;
+		</pre>
+		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.button-tabs.js"></script>
+		<script type="text/javascript">
+$(function(){
+	$('.button-tabs').buttonTabs({
+		title: 'Записаться на собеседование'
+	});
+});
+		</script>
+	</body>
+</html>

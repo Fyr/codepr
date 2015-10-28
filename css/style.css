@@ -1,0 +1,58 @@
+body { font-family: Arial, sans-serif; font-size: 14px; color: #000; margin: 0; padding: 0; min-width: 320px;  }
+
+a, a:hover { color: #1687ca;}
+a:focus {outline: none; text-decoration: none;}
+
+.wrapper { margin: 0 auto; max-width: 940px; padding: 0 10px;}
+.clearfix:before, .clearfix:after { content: " "; display: table;}
+.clearfix:after { clear: both; }
+
+
+
+.textBox { border-radius: 0; border: 1px solid #b0b0b0; width: 176px; display: inline-block; vertical-align: top; height: 33px; text-transform: uppercase; padding: 3px 11px 0 11px; background: #fff; font-family: 'DINNextW01-Bold'; color: #000; outline: none; line-height: 30px; }
+.rtl .textBox { font-family: 'GEThameen-DemiBold'; }
+
+.textBox::-webkit-input-placeholder { color: #b0b0b0; opacity: 1;}
+.textBox::-moz-placeholder          {color: #b0b0b0; opacity: 1; }/* Firefox 19+ */
+.textBox:-moz-placeholder           {color: #b0b0b0; opacity: 1; }/* Firefox 18- */
+.textBox:-ms-input-placeholder { color: #b0b0b0; opacity: 1; }
+
+
+.my-placeholder { color: #b0b0b0; }
+
+.textBox:hover { background: #fafafa;}
+.textBox:focus { border-bottom-color: #000;
+	-webkit-box-shadow: inset 0px -2px 0px 0px #000;
+	-moz-box-shadow:    inset 0px -2px 0px 0px #000;
+	box-shadow:         inset 0px -2px 0px 0px #000;
+}
+
+.textBox.error { border-color: red !important;}
+.textBox.error:focus { border-bottom-color: #000;
+	-webkit-box-shadow: inset 0px -2px 0px 0px #000;
+	-moz-box-shadow:    inset 0px -2px 0px 0px #000;
+	box-shadow:         inset 0px -2px 0px 0px #000;
+}
+
+
+
+.button-tabs button { background: #5ecf80;}
+.button-tabs button:hover { background: #54b972;}
+.button-tabs input {
+	display: inline-block;
+	border: 1px solid #989898;
+    border-radius: 18px;
+    font-family: Verdana;
+    height: 36px;
+    margin: 0 5px;
+    outline: none;
+    padding: 0 15px;
+    text-align: center;
+    width: 220px;
+}
+
+.button-tabs .code-small { font-size: 12px; line-height: 18px; }
+.button-tabs .subscribe { padding: 30px 0 0 0;}
+
+.button-tabs-content  p { margin: 10px 0;}
+.button-tabs .button-tabs-inner .title { font-size: 18px; font-weight: bold;}
